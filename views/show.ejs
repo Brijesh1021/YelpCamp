@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+</head>
+<body>
+    <h1>Name</h1>
+    <p><%= shows.title %></p>
+    <h1>Place</h1>
+    <p><%= shows.location %></p>
+    <form action="/camps/<%= shows._id %>?_method=DELETE" method="POST">
+        <button>Delete</button>
+    </form>
+    <a href="/camps">Index Page</a>
+    <a href="/camps/<%= shows._id %>/edit">Edit the place</a>
+    <a href
+</body>
+</html>
